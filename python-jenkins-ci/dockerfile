@@ -1,0 +1,17 @@
+# Base image with Python 3.8
+FROM python:3.8-slim
+
+# Set work directory
+WORKDIR /app
+
+# Copy dependencies
+COPY requirements.txt .
+
+# Install dependencies
+RUN pip install --upgrade pip && pip install -r requirements.txt
+
+# Copy app code
+COPY . .
+
+# Default command (optional, useful for local testing)
+CMD ["python", "-m", "unittest", "discover", "-s", "tests"]
