@@ -10,12 +10,13 @@
         IMAGE_NAME = "kenzm/python-app:${BUILD_NUMBER}"
       }
     
-      stages {
-        stage('Checkout') {
-          steps {
-            git url: 'https://github.com/Projects-kenz/CI-CD-projects' 
-          }
-        }
+      stage('Checkout') {
+         steps {
+            git branch: 'main',
+             url: 'https://github.com/Projects-kenz/CI-CD-projects.git'
+           }
+      }
+
     
         stage('Install Dependencies') {
           steps {
