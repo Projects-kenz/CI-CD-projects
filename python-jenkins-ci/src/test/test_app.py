@@ -1,7 +1,5 @@
-# src/test/test_app.py
-
 import unittest
-from src.app import add  # Adjust this import based on your structure
+from main.app import add  # ✅ Corrected based on PYTHONPATH=src
 
 class TestAddFunction(unittest.TestCase):
 
