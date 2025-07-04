@@ -22,7 +22,7 @@ pipeline {
       steps {
         sh '''
           cd python-jenkins-ci
-          pip install -r requirements.txt
+          pip install -r requirement.txt
         '''
       }
     }
