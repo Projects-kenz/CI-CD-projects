@@ -29,7 +29,8 @@ pipeline {
 
     stage('Run Tests') {
       steps {
-        sh 'cd python-jenkins-ci && python -m unittest discover -s src/test'
+        sh 'cd python-jenkins-ci && PYTHONPATH=src python -m unittest discover -s src/test'
+
       }
     }
 
