@@ -8,7 +8,7 @@ pipeline {
 
 
   environment {
-    IMAGE_NAME = "kenzm/python-app:${BUILD_NUMBER}"
+    IMAGE_NAME = "kenzieeiy/python-app:${BUILD_NUMBER}"
   }
 
   stages {
