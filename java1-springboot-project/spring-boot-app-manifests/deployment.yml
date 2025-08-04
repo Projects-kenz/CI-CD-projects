@@ -17,6 +17,6 @@ spec:
       serviceAccountName: sa-spring-boot-app
       containers:
       - name: spring-boot-app
-        image: kenzieeiy/java1-cicd:92
+        image: kenzieeiy/java1-cicd:94
         ports:
         - containerPort: 8080
