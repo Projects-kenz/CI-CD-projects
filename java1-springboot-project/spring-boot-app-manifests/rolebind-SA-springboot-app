@@ -5,7 +5,7 @@ metadata:
   namespace: default
 subjects:
 - kind: ServiceAccount
-  name: sa-springboot-app
+  name: sa-spring-boot-app
   namespace: default
 roleRef:
   kind: Role
