@@ -14,6 +14,7 @@ spec:
       labels:
         app: spring-boot-app
     spec:
+      ServiceAccountName: sa-spring-boot-app
       containers:
       - name: spring-boot-app
         image: abhishekf5/ultimate-cicd:68
