@@ -14,7 +14,7 @@ spec:
       labels:
         app: spring-boot-app
     spec:
-      ServiceAccountName: sa-spring-boot-app
+      serviceAccountName: sa-spring-boot-app
       containers:
       - name: spring-boot-app
         image: kenzieeiy/java1-cicd:86
