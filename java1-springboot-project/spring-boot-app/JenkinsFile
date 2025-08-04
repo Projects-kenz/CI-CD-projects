@@ -1,4 +1,4 @@
-pipeline {
+oupipeline {
   agent {
     docker {
       image 'kenzieeiy/java17-maven-docker-git:latest'
@@ -8,8 +8,8 @@ pipeline {
   stages {
     stage('Checkout') {
       steps {
-        
-        git branch: 'main', url: 'https://github.com/Projects-kenz/CI-CD-projects.git'
+        checkout scm
+        //git branch: 'main', url: 'https://github.com/Projects-kenz/CI-CD-projects.git'
       }
     }
     stage('Build and Test') {
