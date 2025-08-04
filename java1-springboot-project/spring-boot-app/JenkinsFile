@@ -1,4 +1,4 @@
-oupipeline {
+pipeline {
   agent {
     docker {
       image 'kenzieeiy/java17-maven-docker-git:latest'
