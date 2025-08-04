@@ -22,7 +22,7 @@ pipeline {
     }
     stage('Static Code Analysis') {
       environment {
-        SONAR_URL = "https://postposted-assembly-calculated-specialist.trycloudflare.com"
+        SONAR_URL = "https://er-onion-cylinder-recommended.trycloudflare.com"
       }
       steps {
         withCredentials([string(credentialsId: 'SONARQUBE-CRED', variable: 'SONAR_AUTH_TOKEN')]) {
@@ -56,7 +56,7 @@ pipeline {
                     git config user.email "kenzmazin67@gmail.com"
                     git config user.name "kenzld"
                     BUILD_NUMBER=${BUILD_NUMBER}
-                    sed -i "s/replaceImageTag/${BUILD_NUMBER}/g" java1-springboot-project/spring-boot-app-manifests/deployment.yml
+                    sed -i 's|image:.*|image: kenzieeiy/java1-cicd:${BUILD_NUMBER}|' spring-boot-app-manifests/deployment.yml
                     git add java1-springboot-project/spring-boot-app-manifests/deployment.yml
                     git commit -m "Update deployment image to version ${BUILD_NUMBER}"
                     git push https://${GITHUB_TOKEN}@github.com/${GIT_USER_NAME}/${GIT_REPO_NAME} HEAD:main
