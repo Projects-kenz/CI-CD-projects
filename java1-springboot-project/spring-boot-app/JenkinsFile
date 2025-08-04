@@ -10,7 +10,7 @@ pipeline {
   stages {
     stage('Checkout') {
       steps {
-        //checkout scm
+        
         git branch: 'main', url: 'https://github.com/Projects-kenz/CI-CD-projects.git'
       }
     }
@@ -22,7 +22,7 @@ pipeline {
     }
     stage('Static Code Analysis') {
       environment {
-        SONAR_URL = "https://er-onion-cylinder-recommended.trycloudflare.com"
+        SONAR_URL = "https://plymouth-saver-lets-containing.trycloudflare.com"
       }
       steps {
         withCredentials([string(credentialsId: 'SONARQUBE-CRED', variable: 'SONAR_AUTH_TOKEN')]) {
