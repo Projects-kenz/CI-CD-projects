@@ -10,8 +10,8 @@ pipeline {
   stages {
     stage('Checkout') {
       steps {
-        checkout scm
-        //git branch: 'main', url: 'https://github.com/Projects-kenz/CI-CD-projects.git'
+        //checkout scm
+        git branch: 'main', url: 'https://github.com/Projects-kenz/CI-CD-projects.git'
       }
     }
     stage('Build and Test') {
