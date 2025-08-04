@@ -2,7 +2,8 @@ pipeline {
   agent {
     docker {
       image 'kenzieeiy/java17-maven-docker-git:latest'
-      args '--user 106:112 -v /var/run/docker.sock:/var/run/docker.sock'
+      args '--user root -v /var/run/docker.sock:/var/run/docker.sock'
+
 
     }
   }
