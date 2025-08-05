@@ -22,7 +22,7 @@ pipeline {
     }
     stage('Static Code Analysis') {
       environment {
-        SONAR_URL = "https://adaptive-neural-basically-weeks.trycloudflare.com"
+        SONAR_URL = "https://plymouth-saver-lets-containing.trycloudflare.com"
       }
       steps {
         withCredentials([string(credentialsId: 'SONARQUBE-CRED', variable: 'SONAR_AUTH_TOKEN')]) {
