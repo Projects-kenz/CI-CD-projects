@@ -58,7 +58,7 @@ pipeline {
                     BUILD_NUMBER=${BUILD_NUMBER}
                     sed -i "s|image:.*|image: kenzieeiy/java1-cicd:${BUILD_NUMBER}|" java1-springboot-project/spring-boot-app-manifests/deployment.yml
                     git add java1-springboot-project/spring-boot-app-manifests/deployment.yml
-                    git commit -m "Update deployment image to version ${BUILD_NUMBER}"
+                    git commit -m "Updated deployment image by Jenkins"
                     git push https://${GITHUB_TOKEN}@github.com/${GIT_USER_NAME}/${GIT_REPO_NAME} HEAD:main
                 '''
             }
