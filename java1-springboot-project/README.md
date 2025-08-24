@@ -1,10 +1,7 @@
 ## End-to-End Pipeline Flow
 ![Java-maven-CI-CD-Project](https://github.com/user-attachments/assets/5d27b124-31c9-43c0-a0ee-decc0748d9f4)
 
-# End-to-End CI/CD Pipeline for Java Spring Boot Application
 
-This repository contains a **complete CI/CD pipeline** for a Java Spring Boot web application.  
-It demonstrates how to automate build, test, code quality checks, containerization, and deployment to Kubernetes using industry-standard DevOps tools.
 
 ---
 
