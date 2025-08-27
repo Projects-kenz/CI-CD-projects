@@ -49,5 +49,3 @@ flowchart TD
 <img width="1522" height="823" alt="sonarqube new" src="https://github.com/user-attachments/assets/23fbd78a-a4a2-4b97-a6cd-bee99ca2f9d8" />
 **ArgoCD**
 <img width="1862" height="937" alt="argocd new" src="https://github.com/user-attachments/assets/3278ab12-8884-4d1a-aaf1-f2c98a08babc" />
-**K8S Cluster**
-<img width="1171" height="628" alt="terminal" src="https://github.com/user-attachments/assets/0db82882-a928-4463-a5dc-c6f6038dc4cd" />
